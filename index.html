@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elsie Espinosa Calculator</title>
+	<meta http-equiv=content" content-type="text/html;charset=utf8;">
+	<link rel="stylesheet" type="text/css" href="calcu.css">
+</head>
+
+<body>
+	<div id="calculator">
+
+		<div class="result"><input type="text"  id="d" readonly ></div> 
+		<div class="keys symbol" value="CLEAR" onclick='c("")'>C</div>
+		<div class="keys symbol" value="DELETE" onclick='back()'>DEL</div>
+		<div class="keys symbol" value="/" onclick='v("/")'>/</div>
+		<div class="keys symbol" value="*" onclick='v("*")'>*</div>
+		<div class="keys" value="9" onclick='v("9")'>9</div>
+		<div class="keys" value="8" onclick='v("8")'>8</div>
+		<div class="keys" value="7" onclick='v("7")'>7</div>
+		<div class="keys symbol" value="-" onclick='v("-")'>-</div>
+		<div class="keys" value="6" onclick='v("6")'>6</div>
+		<div class="keys" value="5" onclick='v("5")'>5</div>
+		<div class="keys" value="4" onclick='v("4")'>4</div>
+		<div class="keys symbol" value="+" onclick='v("+")'>+</div>
+		<div class="keys" value="3" onclick='v("3")'>3</div>
+		<div class="keys" value="2" onclick='v("2")'>2</div>
+		<div class="keys" value="1" onclick='v("1")'>1</div>
+		<div class="keys" value="+/-" onclick='Neg("-")'>+/-</div>
+		<div class="keys" value="0" onclick='v("0")'>0</div>
+		<div class="keys" value="." onclick='v(".")'>.</div>
+		<div class="keys_symbol" value="=" onclick="e()">=</div>
+		
+	</div>
+
+	<script src="calcu.js"></script>
+
+</body>
+</html>
